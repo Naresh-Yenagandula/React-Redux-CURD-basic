@@ -37,7 +37,7 @@ function Show() {
                         <td>{user.name}</td>
                         <td>{user.email}</td>
                         <td>
-                            <button className='btn-sm btn-primary me-3'>Edit</button>
+                            <button className='btn-sm btn-primary me-3' onClick={e=>navigate(`/edit/${user.id}`)}>Edit</button>
                             <button className='btn-sm btn-danger' onClick={e => deleteData(user.id)}>Delete</button>
                         </td>
                     </tr>

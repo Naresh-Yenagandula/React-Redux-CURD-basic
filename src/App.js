@@ -6,6 +6,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Edit from './components/edit';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route exact path="" element={<Show />} />
         <Route exact path='/add' element={<Add />} />
+        <Route exact path='/edit/:id' element={<Edit />} />
       </Routes>
     </Router>
   );

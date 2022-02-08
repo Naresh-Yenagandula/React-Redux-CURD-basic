@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GET_USERS, CREATE_USERS, UPDATE_USERS, DELETE_USERS } from "./types";
+import { GET_USERS, CREATE_USERS, UPDATE_USERS, DELETE_USERS, GET_USER_BY_ID } from "./types";
 
 const getUsers = (users) => {
     return {
@@ -22,9 +22,17 @@ const deleteUser = (id) => {
     }
 }
 
-const updateUser = () => {
+const updateUser = (user) => {
     return {
         type: UPDATE_USERS,
+        payload: user
+    }
+}
+
+const getById = (user) => {
+    return {
+        type: GET_USER_BY_ID,
+        payload: user
     }
 }
 
@@ -44,7 +52,6 @@ export const adduser = (user) => {
     return function (dispatch) {
         axios.post("http://localhost:5000/users", user)
             .then((res) => {
-                console.log(res.data);
                 dispatch(createUser(user))
             })
             .catch((error) => {
@@ -69,7 +76,19 @@ export const editUser = (user) => {
     return function (dispatch) {
         axios.put(`http://localhost:5000/users/${user.id}`, user)
             .then((res) => {
-                dispatch(updateUser())
+                dispatch(updateUser(user))
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+    }
+}
+
+export const getUserById = (id) => {
+    return function (dispatch) {
+        axios.get("http://localhost:5000/users/" + id)
+            .then((res) => {
+                dispatch(getById(res.data))
             })
             .catch((error) => {
                 console.log(error);
