@@ -10,12 +10,12 @@
 
 1. Clone repository
 2. Open terminal and execute
-   **_ npm install _**
+   *** npm install ***
 3. Then do
-   **_ npm start _**
-4. Open another terminal and execute below cmd to start Json-Server
-   **_ npm run server _**
+   *** npm start ***
+4. Open another terminal and execute cmd to start Json-Server
+   *** npm run server ***
 5. Open to browser and go to
-   **_ http://localhost:3000 _**
+   *** http://localhost:3000 ***
 
-**_ HAPPY CODING _**
+*** HAPPY CODING  😊***
