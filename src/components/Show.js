@@ -17,7 +17,7 @@ function Show() {
         dispatch(deleteUsers(id))
     }
     return <div className='container'>
-        <h3 className='text-center mt-3'>React curd operations with Redux</h3>
+        <h3 className='text-center mt-3'>React CURD app with Redux</h3>
         <div className='float-end my-3'>
             <button className='btn btn-success' onClick={() => navigate('/add')}>ADD</button>
         </div>
