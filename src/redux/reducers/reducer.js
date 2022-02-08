@@ -19,7 +19,7 @@ export const userReducer = (state = initialState, action) => {
         case DELETE_USERS:
             return {
                 ...state,
-                user:state.filter(({id})=>id!==action.payload.id)
+                users:state.users.filter(({id})=>id!==action.payload.id)
             };
         case UPDATE_USERS:
             return { state };
