@@ -1,4 +1,4 @@
-# React CURD app with Redux & Json-Sever
+## React CURD app with Redux & Json-Sever
 
 ### Technology stack
 
@@ -6,16 +6,28 @@
 2. Redux
 3. Json-Server
 
-### Set Up
+### Set up
 
 1. Clone repository
-2. Open terminal and execute
-   *** npm install ***
-3. Then do
-   *** npm start ***
-4. Open another terminal and execute cmd to start Json-Server
-   *** npm run server ***
-5. Open to browser and go to
-   *** http://localhost:3000 ***
+2. After cloning, open terminal and execute
 
-*** HAPPY CODING  😊***
+    ```
+    npm install
+    ```
+
+3. Then do
+
+    ```
+    npm start
+    ```
+
+4. Open another terminal and execute cmd to start Json-Server
+
+    ```
+    npm run server
+    ```
+
+5. Open to browser and go to
+   [http://localhost:3000](http://localhost:3000)
+
+    HAPPY CODING 😊
